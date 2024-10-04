@@ -175,8 +175,8 @@ class ezcGraphHorizontalRenderer extends ezcGraphRenderer2d implements
         $dataNumber = 1,
         $dataCount = 1,
         $symbol = ezcGraph::NO_SYMBOL,
-        ezcGraphColor $symbolColor = null,
-        ezcGraphColor $fillColor = null,
+        ?ezcGraphColor $symbolColor = null,
+        ?ezcGraphColor $fillColor = null,
         $axisPosition = 0.,
         $thickness = 1. )
     {

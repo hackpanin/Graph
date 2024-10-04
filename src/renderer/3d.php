@@ -1387,8 +1387,8 @@ class ezcGraphRenderer3d extends ezcGraphRenderer implements
         $dataNumber = 0,
         $dataCount = 1,
         $symbol = ezcGraph::NO_SYMBOL,
-        ezcGraphColor $symbolColor = null,
-        ezcGraphColor $fillColor = null,
+        ?ezcGraphColor $symbolColor = null,
+        ?ezcGraphColor $fillColor = null,
         $axisPosition = 0.,
         $thickness = 1. )
     {
@@ -1579,10 +1579,10 @@ class ezcGraphRenderer3d extends ezcGraphRenderer implements
         $axisPosition = 0.,
         $dataNumber = 1,
         $dataCount = 1,
-        ezcGraphFontOptions $font = null,
+        ?ezcGraphFontOptions $font = null,
         $text = '',
         $size = 0,
-        ezcGraphColor $markLines = null,
+        ?ezcGraphColor $markLines = null,
         $xOffset = 0,
         $yOffset = 0,
         $stepSize = 0.,
@@ -1728,8 +1728,8 @@ class ezcGraphRenderer3d extends ezcGraphRenderer implements
      */
     public function drawBox(
         ezcGraphBoundings $boundings,
-        ezcGraphColor $background = null,
-        ezcGraphColor $borderColor = null,
+        ?ezcGraphColor $background = null,
+        ?ezcGraphColor $borderColor = null,
         $borderWidth = 0,
         $margin = 0,
         $padding = 0,
@@ -1835,7 +1835,7 @@ class ezcGraphRenderer3d extends ezcGraphRenderer implements
         ezcGraphBoundings $boundings,
         $text,
         $align = ezcGraph::LEFT,
-        ezcGraphRotation $rotation = null )
+        ?ezcGraphRotation $rotation = null )
     {
         if ( $this->depth === false )
         {
@@ -2047,7 +2047,7 @@ class ezcGraphRenderer3d extends ezcGraphRenderer implements
         ezcGraphCoordinate $start,
         ezcGraphCoordinate $end,
         ezcGraphChartElementAxis $axis,
-        ezcGraphAxisLabelRenderer $labelClass = null )
+        ?ezcGraphAxisLabelRenderer $labelClass = null )
     {
         // Calculate used space for three dimensional effects
         if ( $this->depth === false )

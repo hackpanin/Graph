@@ -245,8 +245,8 @@ abstract class ezcGraphRenderer
         $dataNumber = 1,
         $dataCount = 1,
         $symbol = ezcGraph::NO_SYMBOL,
-        ezcGraphColor $symbolColor = null,
-        ezcGraphColor $fillColor = null,
+        ?ezcGraphColor $symbolColor = null,
+        ?ezcGraphColor $fillColor = null,
         $axisPosition = 0.,
         $thickness = 1.
     );
@@ -280,10 +280,10 @@ abstract class ezcGraphRenderer
         $axisPosition = 0.,
         $dataNumber = 1,
         $dataCount = 1,
-        ezcGraphFontOptions $font = null,
+        ?ezcGraphFontOptions $font = null,
         $text = '',
         $size = 0,
-        ezcGraphColor $markLines = null,
+        ?ezcGraphColor $markLines = null,
         $xOffset = 0,
         $yOffset = 0,
         $stepSize = 0.,
@@ -326,8 +326,8 @@ abstract class ezcGraphRenderer
      */
     abstract public function drawBox(
         ezcGraphBoundings $boundings,
-        ezcGraphColor $background = null,
-        ezcGraphColor $borderColor = null,
+        ?ezcGraphColor $background = null,
+        ?ezcGraphColor $borderColor = null,
         $borderWidth = 0,
         $margin = 0,
         $padding = 0,
@@ -350,7 +350,7 @@ abstract class ezcGraphRenderer
         ezcGraphBoundings $boundings,
         $text,
         $align = ezcGraph::LEFT,
-        ezcGraphRotation $rotation = null
+        ?ezcGraphRotation $rotation = null
     );
 
     /**
@@ -389,7 +389,7 @@ abstract class ezcGraphRenderer
         ezcGraphCoordinate $start,
         ezcGraphCoordinate $end,
         ezcGraphChartElementAxis $axis,
-        ezcGraphAxisLabelRenderer $labelClass = null
+        ?ezcGraphAxisLabelRenderer $labelClass = null
     );
 
     /**

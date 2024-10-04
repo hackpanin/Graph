@@ -64,7 +64,7 @@ class ezcGraphRotation extends ezcGraphTransformation
      * @param ezcGraphCoordinate $center
      * @return ezcGraphTransformation
      */
-    public function __construct( $rotation = 0, ezcGraphCoordinate $center = null )
+    public function __construct( $rotation = 0, ?ezcGraphCoordinate $center = null )
     {
         $this->rotation = (float) $rotation;
 

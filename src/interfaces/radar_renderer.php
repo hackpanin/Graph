@@ -61,8 +61,8 @@ interface ezcGraphRadarRenderer
         $dataNumber = 1,
         $dataCount = 1,
         $symbol = ezcGraph::NO_SYMBOL,
-        ezcGraphColor $symbolColor = null,
-        ezcGraphColor $fillColor = null,
+        ?ezcGraphColor $symbolColor = null,
+        ?ezcGraphColor $fillColor = null,
         $thickness = 1.
     );
 }
